@@ -14,9 +14,14 @@ con = sqlite3.connect('sentiments.sqlite')
 
 con.execute('drop table if exists tweets;')
 con.execute('create table if not exists tweets (created datetime, tweet char, user char, lang char, search char);')
+COUNTER = 0
 
 
 class Listener(StreamListener):
+
+    def __init__(self, api=None):
+        super().__init__(api)
+        self.COUNTER = 0
 
     def on_data(self, data):
         all_data = json.loads(data)
@@ -27,8 +32,10 @@ class Listener(StreamListener):
         lang = all_data['lang']
         con.execute('insert into tweets (created, tweet, user, lang, search) values (?, ?, ?, ?, ?)',
                     (time, tweet, user, lang, SEARCH_TERM))
-        print(tweet)
+        # print(tweet)
         con.commit()
+        self.COUNTER += 1
+        print(self.COUNTER)
 
     def on_error(self, status):
         print(status)
