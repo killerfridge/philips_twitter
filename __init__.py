@@ -45,4 +45,4 @@ auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
 
 twitter_stream = Stream(auth, Listener())
-twitter_stream.filter(track=['philips'])
+twitter_stream.filter(track=[SEARCH_TERM])

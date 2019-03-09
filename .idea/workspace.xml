@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4dffd10c-627a-4118-8ab5-736f669b126e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentiments.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/sentiments.sqlite" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+            <state relative-caret-position="595">
+              <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -148,7 +146,7 @@
       <workItem from="1552069306124" duration="2016000" />
       <workItem from="1552077275722" duration="1788000" />
       <workItem from="1552091881038" duration="4000" />
-      <workItem from="1552092064263" duration="310000" />
+      <workItem from="1552092064263" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="Created the twitter streaming service. Reads tweets given a certain filter">
       <created>1552072288204</created>
@@ -157,22 +155,28 @@
       <option name="project" value="LOCAL" />
       <updated>1552072288204</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added a counter to the class so that we can see how many tweets have been added">
+      <created>1552092403312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552092403312</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4118000" />
+    <option name="totallyTimeSpent" value="4151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26586434" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46061268" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46061268" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -195,13 +199,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created the twitter streaming service. Reads tweets given a certain filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the twitter streaming service. Reads tweets given a certain filter" />
+    <MESSAGE value="Added a counter to the class so that we can see how many tweets have been added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a counter to the class so that we can see how many tweets have been added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+        <state relative-caret-position="595">
+          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
         </state>
       </provider>
     </entry>
