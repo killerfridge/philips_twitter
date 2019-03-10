@@ -4,7 +4,7 @@ import json
 import sqlite3
 import datetime as dt
 
-SEARCH_TERM = 'lumea'
+SEARCH_TERM = 'cars'
 ckey = '174okOoY7G6cTh8DsDPgFsUCF'
 csecret = 'iRXkhd2welmWDMOTb8FLhMTypX7HDBmdpi2KFmceoDI2uhnh3L'
 atoken = '95300715-4QI5aoymwxfGUOgsoDFgwaXEsfG4pXhSsN0rj0wA7'
@@ -12,7 +12,6 @@ asecret = '7o6EAohXUQkVV4MCMTsOlXCHU862TgNdsHUhEhFMJPrRA'
 
 con = sqlite3.connect('sentiments.sqlite')
 
-con.execute('drop table if exists tweets;')
 con.execute('create table if not exists tweets (created datetime, tweet char, user char, lang char, search char);')
 COUNTER = 0
 
@@ -32,10 +31,10 @@ class Listener(StreamListener):
         lang = all_data['lang']
         con.execute('insert into tweets (created, tweet, user, lang, search) values (?, ?, ?, ?, ?)',
                     (time, tweet, user, lang, SEARCH_TERM))
-        # print(tweet)
+        print(f'{user} said:\n{tweet}')
         con.commit()
         self.COUNTER += 1
-        print(self.COUNTER)
+        # print(self.COUNTER)
 
     def on_error(self, status):
         print(status)
